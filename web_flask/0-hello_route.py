@@ -1,11 +1,13 @@
 #!/usr/bin/python3
+"""Importing Flask framework"""
 from flask import Flask
 
 app = Flask(__name__)
 
 @app.route("/", strict_slashes=False)
 
-def helloWorld():
+def hello_world():
+    """return hello HBNB"""
     return "Hello HBNB!"
 
 if __name__ == '__main__':

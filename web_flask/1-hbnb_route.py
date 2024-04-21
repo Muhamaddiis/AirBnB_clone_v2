@@ -4,11 +4,13 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route("/", strict_slashes=False)
-def helloWorld():
+def hello_world():
+    """return hello HBNB"""
     return "Hello HBNB!"
 
 @app.route("/hbnb")
 def hbnb():
+    """return HBNB"""
     return "HBNB"
 
 if __name__ == '__main__':
